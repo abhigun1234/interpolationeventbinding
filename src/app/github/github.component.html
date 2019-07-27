@@ -1,0 +1,9 @@
+<button (click)="searchUser()">search</button>
+<div *ngIf="searchResult">
+    <ul>
+
+    <li *ngFor="let result of searchResult.items">
+        {{result.login}}
+    </li>
+    </ul>
+</div>
